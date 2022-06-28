@@ -1,0 +1,104 @@
+@import url('"https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Montserrat:wght@500&display=swap');
+
+:root{
+    --color-dark-cyan: hsl(158, 36%, 37%);
+    --color-cream: hsl(30, 38%, 92%);
+    --color-dark-blue: hsl(212, 21%, 14%);
+    --color-grayish-blue: hsl(228, 12%, 48%);
+    --color-white: hsl(0, 0%, 100%);
+    --font-size-p: 14px;
+    --font-fam-p: 'Montserrat', sans-serif;
+    --font-fam-title: 'Fraunces', serif;
+    --p-10: 10px;
+    --m-10:10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--color-cream);
+    box-sizing: border-box;
+}
+@media all and (max-width:414px){
+    .wrapper{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.5fr;
+    }
+    #image-container{
+       grid-row: 1/ 2;
+       grid-column: 1 / -1;
+       margin-top: 15px;
+    }
+    #image-container img{
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+    }
+    #product-details-container{
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        background-color: var(--color-white);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+    }
+    .category{
+        font-family: var(--font-fam-p);
+        padding: var(--p-10);
+        margin-top: var(--m-10);
+        letter-spacing: 5px;
+        color: var(--color-grayish-blue);
+        }
+    .title{
+        font-family: var(--font-fam-title);
+        color: var(--color-dark-blue);
+        width: 15ch;
+        font-size: 35px;
+        padding: var(--p-10);
+    }
+    .description{
+        font-family: var(--font-fam-p);
+        font-size: 18px;
+        color: var(--color-grayish-blue);
+        padding: var(--p-10);
+        width: 28ch;
+    }
+    .pricing{
+        padding: var(--p-10);
+        margin-top: var(--m-10);
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        
+    }
+    .discounted-price{
+        font-size: 30px;
+        font-family: var(--font-fam-title);
+        color: var(--color-dark-cyan);
+    }
+    .actual-price{
+        color: var(--color-grayish-blue);
+        text-decoration: line-through;
+        font-family: var(--font-fam-p);
+    }
+    #btn-add-to-cart{
+        width: 100%;
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-top: var(--m-10);
+        text-decoration: none;
+        background-color: var(--color-dark-cyan);
+        padding: 10px 0px;
+        color: var(--color-white);
+        font-family: var(--font-fam-p);
+        border-radius: 10px;
+    }
+}
