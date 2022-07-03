@@ -326,7 +326,7 @@ body{
     }
     .pricing{
         padding: var(--p-10);
-        margin-top: var(--m-10);
+        margin-top: 30px;
         display: grid;
         grid-template-columns: 130px 1fr;
         grid-template-rows: 1fr 1fr;
