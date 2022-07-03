@@ -62,12 +62,12 @@ body{
         font-family: var(--font-fam-title);
         color: var(--color-dark-blue);
         width: 15ch;
-        font-size: 35px;
+        /* font-size: 35px; */
         padding: var(--p-10);
     }
     .description{
         font-family: var(--font-fam-p);
-        font-size: 18px;
+        /* font-size: 18px; */
         color: var(--color-grayish-blue);
         padding: var(--p-10);
         width: 30ch;
@@ -322,7 +322,7 @@ body{
         color: var(--color-grayish-blue);
         padding: var(--p-10);
         width: 23ch;
-        line-height: 25px;
+        line-height: 30px;
     }
     .pricing{
         padding: var(--p-10);
