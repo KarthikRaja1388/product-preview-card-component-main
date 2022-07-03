@@ -7,22 +7,22 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/845ae26aa3.js" crossorigin="anonymous"></script>
-
+  <script src="main.js"></script>
 
   <title>Frontend Mentor | Product preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center;margin-top: 10px; }
+    .attribution { font-size: 11px; text-align: center;margin-top: 10px;grid-column: 1 / -1;}
     .attribution a { color: hsl(228, 45%, 44%); }
     
   </style>
 
 </head>
-<body>
+<body onload="replaceProductImage()" onresize="replaceProductImage()">
     <div class="wrapper">
       <section id="image-container">
-        <img src="images/image-product-mobile.jpg" alt="">
+        <img src="images/image-product-mobile.jpg" alt="" id="product-image">
       </section>
       <section id="product-details-container">
         <p class="category">PERFUME</p>
